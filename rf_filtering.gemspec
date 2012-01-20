@@ -23,12 +23,9 @@ Gem::Specification.new do |s|
     "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
-    "Rakefile",
     "VERSION",
-    "better_newrelic_sql_obfuscator.gemspec",
-    "lib/better_newrelic_sql_obfuscator.rb",
-    "test/better_newrelic_sql_obfuscator_unit_test.rb",
-    "test/helper.rb"
+    "rf_filtering.gemspec",
+    "lib/rf_filtering.rb",
   ]
   s.homepage = "http://github.com/projectdx/rf_filtering"
   s.licenses = ["MIT"]
@@ -39,28 +36,28 @@ Gem::Specification.new do |s|
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rake>, [">= 0"])
-      s.add_development_dependency(%q<minitest>, [">= 0"])
-      s.add_development_dependency(%q<yard>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
-    else
-      s.add_dependency(%q<rake>, [">= 0"])
-      s.add_dependency(%q<minitest>, [">= 0"])
-      s.add_dependency(%q<yard>, [">= 0"])
-      s.add_dependency(%q<bundler>, [">= 0"])
-      s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-    end
+#    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+#      s.add_development_dependency(%q<rake>, [">= 0"])
+#      s.add_development_dependency(%q<minitest>, [">= 0"])
+#      s.add_development_dependency(%q<yard>, [">= 0"])
+#      s.add_development_dependency(%q<bundler>, [">= 0"])
+#      s.add_development_dependency(%q<jeweler>, [">= 0"])
+#      s.add_development_dependency(%q<rcov>, [">= 0"])
+#    else
+#      s.add_dependency(%q<rake>, [">= 0"])
+#      s.add_dependency(%q<minitest>, [">= 0"])
+#      s.add_dependency(%q<yard>, [">= 0"])
+#      s.add_dependency(%q<bundler>, [">= 0"])
+#      s.add_dependency(%q<jeweler>, [">= 0"])
+#      s.add_dependency(%q<rcov>, [">= 0"])
+#    end
   else
-    s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<minitest>, [">= 0"])
-    s.add_dependency(%q<yard>, [">= 0"])
-    s.add_dependency(%q<bundler>, [">= 0"])
-    s.add_dependency(%q<jeweler>, [">= 0"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+#    s.add_dependency(%q<rake>, [">= 0"])
+#    s.add_dependency(%q<minitest>, [">= 0"])
+#    s.add_dependency(%q<yard>, [">= 0"])
+#    s.add_dependency(%q<bundler>, [">= 0"])
+#    s.add_dependency(%q<jeweler>, [">= 0"])
+#    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
